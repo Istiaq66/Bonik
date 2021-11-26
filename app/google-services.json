@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969859037544",
+    "project_id": "bonik-2adb0",
+    "storage_bucket": "bonik-2adb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969859037544:android:049ceef2a0966c1a00fedd",
+        "android_client_info": {
+          "package_name": "com.istiaq66.bonik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969859037544-ani56pd0ph06regljui1hkc5k6drrhev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrO9xexXms7rAsEaMlCAzKg0f_cK2FJXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969859037544-ani56pd0ph06regljui1hkc5k6drrhev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inventory"
+        android:icon="@drawable/inventory"
+        android:title="Inventory" />
+
+    <item
+        android:id="@+id/vendorHub"
+        android:icon="@drawable/vendorhub"
+        android:title="VendorHub" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_button"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/deliveryhub"
+        android:icon="@drawable/deliveryhub"
+        android:title="DeliveryHub" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+</menu>

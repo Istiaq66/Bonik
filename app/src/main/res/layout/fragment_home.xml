@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dullwhite"
+    tools:context=".Home_frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="This Month" />
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/teal_200"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            >
+
+            <TextView
+                android:id="@+id/total1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Total Sold"
+                android:textColor="@color/white"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/total1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="-25dp"
+                android:text="0 BDT"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/teal_200"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:id="@+id/total2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Total Profit"
+                android:textColor="@color/white"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/total2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="-25dp"
+                android:text="0 BDT"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/rectangle"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/expense"
+                app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/rectangle"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sales"
+                app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:background="@drawable/rectangle"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/orders"
+                app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="@drawable/rectangle"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profit"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="@drawable/rectangle"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:src="@drawable/invoices"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="@drawable/rectangle"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/accounts"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="@drawable/rectangle"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/duebook"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stats"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/morebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle"
+                android:layout_marginLeft="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/morebutton"
+                    app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/exrl"
+            android:layout_width="match_parent"
+            app:ael_expanded="false"
+            app:ael_duration="500"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/rectangle"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/team"
+                        app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/services"
+                        app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginLeft="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/supportcenter"
+                        app:shapeAppearanceOverlay="@style/roundimageview"></com.google.android.material.imageview.ShapeableImageView>
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle"
+            android:layout_marginBottom="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+              >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="How to use your Bonik app"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_round_arrow_forward_24"></ImageView>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+   </LinearLayout>
+
+    </ScrollView>

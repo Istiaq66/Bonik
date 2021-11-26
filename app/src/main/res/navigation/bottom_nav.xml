@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.istiaq66.bonik.Home_frag"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/inventory"
+        android:name="com.istiaq66.bonik.Inventory_frag"
+        android:label="fragment_inventory"
+        tools:layout="@layout/fragment_inventory" />
+    <fragment
+        android:id="@+id/vendorHub"
+        android:name="com.istiaq66.bonik.VendorHub_frag"
+        android:label="fragment_vendor_hub"
+        tools:layout="@layout/fragment_vendor_hub" />
+    <fragment
+        android:id="@+id/devivaryhub"
+        android:name="com.istiaq66.bonik.Devivaryhub_frag"
+        android:label="fragment_devivaryhub"
+        tools:layout="@layout/fragment_devivaryhub" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.istiaq66.bonik.Profile_frag"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
